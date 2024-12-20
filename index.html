@@ -59,10 +59,11 @@
         }
 
         .section {
-            background: #e9ecef;
+            background: #e9efee;
             padding: 20px;
             border-radius: 5px;
             margin-bottom: 20px;
+            
         }
 
         .section h2 {
@@ -117,6 +118,69 @@
             margin-top: 20px;
         }
 
+        /*Estilo carrocel*/
+        .carousel {
+            position: relative;
+            max-width: 800px;
+            margin: 20px auto;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .carousel-track-container {
+            overflow: hidden;
+            position: relative;
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .carousel-item {
+            flex: 0 0 100%;
+            text-align: center;
+            background: #a8cbcc;
+            padding: 0px;
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .carousel-item h4 {
+            font-size: 1.2em;
+            color: #333;
+        }
+
+        .carousel-item p {
+            font-style: italic;
+            color: #555;
+        }
+
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 50%;
+        }
+
+        .carousel-btn:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        .carousel-btn.prev {
+            left: 10px;
+        }
+
+        .carousel-btn.next {
+            right: 10px;
+        }
+
         /* Estilos responsivos */
         @media (max-width: 768px) {
             .container {
@@ -161,44 +225,61 @@
     <div class="container">
         <h2>Por que escolher a CoreWeave?</h2>
         <h3>A CoreWeave oferece as melhores soluções em computação em nuvem para projetos de IA e Machine Learning.</h3>
-        <p class="intro" >A CoreWeave é uma startup americana de computação em nuvem especializada em fornecer soluções baseadas em unidades de
-             processamento gráfico (GPUs) para cargas de trabalho intensivas, como inteligência artificial (IA) e aprendizado de máquina. 
-             Fundada em 2017 e sediada em Roseland, Nova Jersey, a empresa se destaca por oferecer uma infraestrutura moderna e nativa em Kubernetes, 
-             projetada para acelerar tarefas que exigem alto poder computacional. </p>
+        <p class="intro" >A CoreWeave é a revolução que o mundo da computação em nuvem estava esperando. 
+            Especializada em soluções baseadas em GPUs de alta performance, a startup americana transforma cargas de trabalho intensivas, 
+            como inteligência artificial (IA) e aprendizado de máquina, em operações incrivelmente rápidas e econômicas. Fundada em 2017, em Roseland, Nova Jersey, 
+            a CoreWeave é sinônimo de inovação, oferecendo uma infraestrutura moderna e nativa em Kubernetes que redefine o padrão para tarefas que exigem alto poder computacional. </p>
                     
-        <p class="intro"> As soluções da CoreWeave permitem que empresas e desenvolvedores treinem, ajustem e implementem modelos de IA até 35 vezes mais rápido, com uma economia de até 80% nos custos de GPU em comparação com provedores de nuvem tradicionais. 
-            COREWEAVE
+        <p class="intro">Com as soluções da CoreWeave, empresas e desenvolvedores podem treinar, ajustar e implementar modelos de IA até 35 vezes mais rápido, enquanto economizam até 80% nos custos de GPU em relação a provedores de nuvem tradicionais. É mais que um avanço—é uma nova era para a IA!
+
+            Em dezembro de 2024, a CoreWeave deu um passo ainda maior ao anunciar uma parceria estratégica com a Cohere, uma das principais startups de IA generativa. 
+            Juntas, estão construindo um centro de dados multibilionário no Canadá, projetado para atender às demandas crescentes de computação de ponta. 
+            Essa conquista reflete o compromisso da CoreWeave em liderar o futuro da tecnologia.
             
             Em dezembro de 2024, a CoreWeave anunciou uma parceria com a startup de IA generativa Cohere para construir e operar um centro de dados multibilionário no Canadá, com a Cohere como principal cliente. 
             DATA CENTER DYNAMICS
             
-            Além disso, a CoreWeave assegurou US$ 1,1 bilhão em financiamento na Série C, liderado pela Coatue, para impulsionar a próxima geração de computação em nuvem voltada para IA. 
-            
-            
-            A empresa também está envolvida em projetos colaborativos significativos para desenvolver centros de dados de grande escala voltados para IA e computação de alto desempenho (HPC</p>
+            Além disso, a CoreWeave assegurou US$ 1,1 bilhão em financiamento na Série C, liderado pela Coatue, para impulsionar a próxima geração de computação em nuvem voltada para IA.         
+            A empresa também está envolvida em projetos colaborativos significativos para desenvolver centros de dados de grande escala voltados para IA e computação de alto desempenho</p>
+
+        <p class="intro">A inovação da CoreWeave também atraiu investidores de peso. Com um financiamento de US$ 1,1 bilhão na Série C, 
+            liderado pela Coatue, a empresa está preparada para impulsionar a próxima geração de computação em nuvem. Além disso, 
+            a CoreWeave participa de projetos de colaboração que visam desenvolver centros de dados de grande escala, otimizados para IA e computação de alto desempenho (HPC).</p>
+        <h3>CoreWeave não é apenas uma solução, é a força motriz que impulsiona o futuro da inteligência artificial.</h3>
         <a href="#signup-form" class="cta">Cadastre-se Agora!</a>
 
         <!-- Contador Dinâmico -->
         <div class="section">
-            <p>Mais de <span id="affiliate-count">0</span> mil afiliados já estão lucrando!</p>
+            <p>
+                <b>Mais de <span id="affiliate-count">0</span> mil afiliados já estão lucrando!</b>
+            </p>
         </div>
 
         <!-- Depoimentos -->
         <div class="section">
             <h2>O que nossos afiliados dizem:</h2>
-            <div class="testimonial">
-                <h4>Maria Silva</h4>
-                <p>"Com apenas R$50,00, comecei a investir e já estou vendo os resultados. A CoreWeave é incrível!"</p>
+            <div class="carousel">
+                <button class="carousel-btn prev">‹</button>
+            <div class="carousel-track-container">
+                <ul class="carousel-track">
+                    <li class="carousel-item">
+                        <h4>Maria Silva</h4>
+                        <p>"Com apenas R$50,00, comecei a investir e já estou vendo os resultados. A CoreWeave é incrível!"</p>
+                    </li>
+                    <li class="carousel-item">
+                        <h4>João Oliveira</h4>
+                        <p>"Nunca imaginei que poderia lucrar automaticamente com a ajuda de robôs de IA. Recomendo para todos!"</p>
+                    </li>
+                    <li class="carousel-item">
+                        <h4>Ana Pereira</h4>
+                        <p>"Fiquei impressionada com a simplicidade e eficácia. Ótima equipe e suporte excelente!"</p>
+                    </li>
+                </ul>
             </div>
-            <div class="testimonial">
-                <h4>João Oliveira</h4>
-                <p>"Nunca imaginei que poderia lucrar automaticamente com a ajuda de robôs de IA. Recomendo para todos!"</p>
-            </div>
-            <div class="testimonial">
-                <h4>Ana Pereira</h4>
-                <p>"Fiquei impressionada com a simplicidade e eficácia. Ótima equipe e suporte excelente!"</p>
-            </div>
+            <button class="carousel-btn next">›</button>
         </div>
+            
+    </div>
 
         <!-- Informações de Investimento -->
         <div class="section">
@@ -236,6 +317,54 @@
 
         increaseCount();
 
+        //scrip carrucel
+
+        const track = document.querySelector('.carousel-track');
+        const items = document.querySelectorAll('.carousel-item');
+        const prevButton = document.querySelector('.carousel-btn.prev');
+        const nextButton = document.querySelector('.carousel-btn.next');
+        let currentIndex = 0;
+        const autoRotateInterval = 5000; // Tempo em milissegundos para rotação automática
+
+        function updateCarousel() {
+            const itemWidth = items[0].getBoundingClientRect().width;
+            track.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+        }
+
+        function moveToNext() {
+            if (currentIndex < items.length - 1) {
+                currentIndex++;
+            } else {
+                currentIndex = 0; // Loop para o início
+            }
+            updateCarousel();
+        }
+
+        function moveToPrev() {
+            if (currentIndex > 0) {
+                currentIndex--;
+            } else {
+                currentIndex = items.length - 1; // Loop para o final
+            }
+            updateCarousel();
+        }
+
+        nextButton.addEventListener('click', moveToNext);
+        prevButton.addEventListener('click', moveToPrev);
+
+        // Rotação automática
+        let autoRotate = setInterval(moveToNext, autoRotateInterval);
+
+        // Pausar rotação automática ao passar o mouse
+        const carousel = document.querySelector('.carousel');
+        carousel.addEventListener('mouseover', () => clearInterval(autoRotate));
+        carousel.addEventListener('mouseout', () => {
+        autoRotate = setInterval(moveToNext, autoRotateInterval);
+        });
+
+        // Ajusta o carrossel ao redimensionar a janela
+         window.addEventListener('resize', updateCarousel);
+
         // Envio de Dados do Formulário
         document.querySelector("form").addEventListener("submit", function(event) {
             event.preventDefault();
@@ -255,7 +384,7 @@
             })
             .then(response => response.text())
             .then(result => { 
-                alert("Cadastro realizado com sucesso! Agora, Crie Sua conta na Plataforma.");
+                alert("Cadastro realizado com sucesso! Abra agora Sua conta na Plataforma e comece a Lucrar.");
                 window.location = "https://app.caoem.com/static/app/#/pages/user/register?invite_code=UEFBPC"
             })
             .catch(error => {
